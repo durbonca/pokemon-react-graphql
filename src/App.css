@@ -26,7 +26,7 @@ body {
 
 .container {
   display: flex;
-  max-width: 550px;
+  max-width: 825px;
   margin: auto;
   flex-wrap: wrap;
   justify-content:space-between;
@@ -37,7 +37,7 @@ body {
 }
 
 .container .pokemon{
-  width: 49%;
+  width: 32%;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -113,4 +113,26 @@ body {
   margin: 0 5px;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .container .pokemon {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .pokemon__attacks, .container .pokemon__meta {
+    flex-wrap: wrap;
+  }
+
+  .container .pokemon__meta span,
+  .container .pokemon__attacks span,
+  .container .pokemon {
+    width: 100%;
+  }
+
+  .container .pokemon__meta span {
+    margin-bottom: 10px;
+  }
 }
