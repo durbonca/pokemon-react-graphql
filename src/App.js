@@ -1,5 +1,6 @@
 import { InMemoryCache, ApolloClient } from '@apollo/client';
 import { ApolloProvider } from '@apollo/react-hooks'
+import './App.css'
 import {PokemonContainer} from './containers/PokemonContainer'
 
 function App() {
